@@ -22,15 +22,20 @@ namespace qrrqyu
 
 
             // Programma
+
+            //Herhaal
             do
             {
+                //foutmelding bij geen getal
                 try
                 {
+                    //Keuze Menu
                     Console.WriteLine($"1) 5 Namen invoeren");
                     Console.WriteLine($"2) Toon Namen");
                     Console.WriteLine($"3) Random naam kiezen");
                     Console.WriteLine($"4) Programma afsluiten");
 
+                    //Ingaven van gebruiker
                     _keuze = int.Parse(Console.ReadLine());
                     Console.Clear();
                     
@@ -42,10 +47,6 @@ namespace qrrqyu
                     Console.ReadKey();
                     Console.Clear();
                 }
-            
-                
-            
-            
 
             // Vraag de namen aan de gebruiker
                 if(_keuze == 1)
@@ -61,9 +62,10 @@ namespace qrrqyu
                     Console.Clear();
                 }
 
-
+                //als de eerste aray niet leeg is start de programma binne de haakjes
                 if (_namen[0] != null)
                 {
+                    //als hij voor keuze 2 heeft gekozen start de programma binne de haakjes
                     if (_keuze == 2)
                     {
                         foreach (string s in _namen)
@@ -76,6 +78,7 @@ namespace qrrqyu
                         Console.Clear();
                     }
 
+                    //als hij voor keuze 3 heeft gekozen start de programma binne de haakjes
                     else if (_keuze == 3)
                     {
                         //Scherm leegmaken
@@ -89,6 +92,7 @@ namespace qrrqyu
                     }
                 }
 
+                //als de 1ste array leeg is start de programma binne de haakjes
                 else if (_namen[0] == null)
                 {
                     Console.WriteLine($"U moet eerst namen toevogen aan de array");
@@ -97,6 +101,7 @@ namespace qrrqyu
                     Console.Clear();
                 }
 
+                //als hij keuze 4 heeft sluit het programma af
                 if(_keuze == 4)
                 {
                     _herhalen = false;
