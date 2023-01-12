@@ -56,6 +56,7 @@ namespace qrrqyu
                         Console.Write($"Geef naam {i + 1}:");
                         _namen[i] = Console.ReadLine();
                         Console.WriteLine();
+                        _keuze = 0;
                     }
 
                     //Scherm leegmaken
@@ -76,6 +77,7 @@ namespace qrrqyu
                         Console.WriteLine("\nDruk op enter om verder te gaan.");
                         Console.ReadKey();
                         Console.Clear();
+                        _keuze = 0;
                     }
 
                     //als hij voor keuze 3 heeft gekozen start de programma binne de haakjes
@@ -89,6 +91,7 @@ namespace qrrqyu
                         Console.WriteLine("\nDruk op enter om verder te gaan.");
                         Console.ReadKey();
                         Console.Clear();
+                        _keuze = 0;
                     }
                 }
 
